@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Book</title>
+</head>
+<body>
+    <h2>Add Book</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }}
+        {{ form.author }}
+        {{ form.published_date }}
+        {{ form.isbn }}
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

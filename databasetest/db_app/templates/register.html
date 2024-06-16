@@ -1,0 +1,11 @@
+<h2>Register</h2>
+<form method="post">
+    {% csrf_token %}
+    <h1>sas1</h1>{{ form.first_name }}
+    <h1>sas1.5</h1>{{ form.last_name }}
+    <h1>sas2</h1>{{ form.email }}
+    <h1>sas3</h1>{{ form.password1 }}
+    <h1>sas4</h1>{{ form.password2 }}<br>
+    {{form.date_of_birth}}
+    <button type="submit">Register</button>
+</form>
